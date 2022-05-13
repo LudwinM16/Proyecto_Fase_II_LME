@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teatro Nacional</title>
+    <link rel="stylesheet" href="css/estiloReserva.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="contenedor">
+          <a href="https://www.cultura.gob.sv" class="logo" target="_blank"><img src="img/logoMini.png"></a>
+
+    <input type="checkbox" id="menu-bar">
+    <label class="icon-menu"for="menu-bar">
+    </label>
+          <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="Acercade.html">Acerca de</a>
+            <a href="contacto.html">Contáctenos</a>
+            <a href="menuCreadores.html">Creadores</a>
+            <a href="menufunciones.html">Próximas Funciones</a>
+            <a href="menuInscripcion.html">Grupos</a>
+          </nav>
+        </div>
+    </header>
+    <div class="container">
+      <div class="card">
+        <form action="registro.php" method="post">
+          <br>
+    <legend>Reserva de entrada</legend>
+    <hr>
+    <br>
+    <label for="Nombre">Nombres: </label>
+    <input type="text" name="nombre" id="nombre">
+    <br><br>
+    <label for="apellido">Apellidos: </label>
+    <input type="text" name="apellido" id="apellido"><br><br>
+
+    <label>Fecha de reserva:</label>
+      <input type="date" name="reserva"><br><br>
+
+    <label>Edad: </label>
+    <input type="number" min="0" max="100" name="edad" /><br><br>
+
+    <label>Cantidad: </label>
+    <input type="number" min="0" max="10" name="cantidad" /><br><br>
+
+    <label for="apellido">Asientos: </label>
+    <input type="text" name="asiento" id="asiento"><br><br>
+
+    <label>Forma de pago: </label>
+      <select name="pago" id="pago">
+      <option> </option>
+      <option>Debito</option>
+      <option>Credito</option>
+      <option>ChivoWallet</option>
+      </select><br><br>
+    
+
+    <label>Correo Electrónico</label>
+    <input type="email" name="correo"><br><br>
+    <div class="row">    
+      <input type="submit" value="Enviar">    
+    </div> 
+      </div> 
+    </div> 
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teatro Nacional</title>
+    <link rel="stylesheet" href="css/estiloInscripciones.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="contenedor">
+          <a href="https://www.cultura.gob.sv" class="logo" target="_blank"><img src="img/logoMini.png"></a>
+
+    <input type="checkbox" id="menu-bar">
+    <label class="icon-menu"for="menu-bar">
+    </label>
+          <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="Acercade.html">Acerca de</a>
+            <a href="contacto.html">Contáctenos</a>
+            <a href="menufunciones.html">Próximas Funciones</a>
+            <a href="reserva.html">Reserva tu entrada!</a>
+          </nav>
+        </div>
+        <hr>
+        <h1 id="funciones"><p>Inscripciones </p></h1>
+        <hr>
+    </header>
+      <div class="container">
+        <div class="card">
+          <br>
+         <center><h4>¡¡VEN Y RESERVA YA TU ENTRADA!!</h4></center> 
+          <br>
+          <img src="img/teatro1.jpg" alt="">
+          <br>
+          <br>
+          <p>Ven y disfruta de tu propia visita guiada a través de uno de los sitios históricos mas emblemáticos del pais, el famoso Teatro Nacional.
+            Solo bríndanos estos sencillos datos y nosotros agendaremos tu visita para nuestras instalaciones.
+            Contamos con personal capacitado para brindarte la mejor experiencia y para que conozcas a profundidad la historia de nuestro pequeño pais El Salvador.</p>
+        </div> 
+        <div class="card">
+          <br>
+          <form action="registro.php" method="post">
+      <legend>Reserva tu entrada</legend>
+      <hr>
+      <br>
+      <label for="Nombre">Nombres del grupo: </label>
+      <input type="text" name="nombre" id="nombre">
+      <br><br>
+      <label for="apellido">Representante del grupo: </label>
+      <input type="text" name="apellido" id="apellido"><br><br>
+  
+      <label>Fecha de reserva:</label>
+        <input type="date" name="reserva"><br><br>
+  
+      <label>Número de personas: </label>
+      <input type="number" min="0" max="100" name="edad" /><br><br>
+  
+      <label for="apellido">Asientos a ocupar: </label>
+      <input type="text" name="asiento" id="asiento"><br><br>
+  
+      <label>Forma de pago: </label>
+        <select name="pago" id="pago">
+        <option> </option>
+        <option>Debito</option>
+        <option>Credito</option>
+        <option>ChivoWallet</option>
+        </select><br><br>
+      
+  
+      <label>Correo Electrónico del instituto:</label>
+      <input type="email" name="correo"><br><br>
+      <div class="row">    
+        <input type="submit" value="Enviar">    
+      </div> 
+      </div>	
+      </div>
+</body>
+</html>
